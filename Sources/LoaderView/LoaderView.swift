@@ -21,6 +21,16 @@ final class LoaderView: UIView {
         $0.removeAutoresizing()
     }
 
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setupUI()
+    }
+
     override func clipToSuperview() {
         if let suprView = superview {
             NSLayoutConstraint.activate([

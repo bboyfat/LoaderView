@@ -22,3 +22,17 @@ public extension UIViewController {
             as? LoaderView)?.stop()
     }
 }
+
+
+func imperativeMapIntToString(array: [Int]) -> [String] {
+    var stringsArray = []
+    for elemet in array {
+        let stringValue = String(elemet)
+        stringsArray.append(stringsArray)
+    }
+    return stringsArray
+}
+
+func declarativeMapIntToString(array: [Int]) -> [String] {
+    return array.map{String($0)}
+}
